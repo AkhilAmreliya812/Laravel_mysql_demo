@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 class UserController extends Controller
 {
     public function users() {
-        return DB::select('SELECT * FROM users');
+        $users = DB::select('SELECT * FROM users');
+        return view('users', ['users' => $users]);
     }
 }
