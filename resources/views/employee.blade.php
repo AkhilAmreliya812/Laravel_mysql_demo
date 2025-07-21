@@ -7,7 +7,7 @@
     <title>Employee</title>
 </head>
 <body>
-    @dd($data['users'][0]['hair']['type'])
-    <h1>Employee Data</h1>
+       <h1>Employee Data</h1>
+       @dd($data)
 </body>
 </html>
