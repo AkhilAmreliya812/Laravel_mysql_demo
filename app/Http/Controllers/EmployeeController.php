@@ -13,4 +13,9 @@ class EmployeeController extends Controller
         return session()->get('empId') ? redirect()->route('employeeProfile') : redirect()->route('employeeLogin');;
 
      }
+
+     function employeeLogout() {
+         session()->forget('empId');
+         return redirect()->route('employeeLogin');
+     }
 }
