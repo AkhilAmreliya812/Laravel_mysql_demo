@@ -18,4 +18,12 @@ class EmployeeController extends Controller
          session()->forget('empId');
          return redirect()->route('employeeLogin');
      }
+
+     function addEmployee(Request $request) {
+         
+        $request>session()->flash('message', 'Employee added successfully!');
+        
+        return redirect()->route('addEmployee');
+
+     }
 }

@@ -34,4 +34,8 @@ Route::view('employeeProfile', 'employeeProfile')->name('employeeProfile');
 
 Route::get('employeeLogout', [EmployeeController::class, 'employeeLogout'])->name('employeeLogout');
 
+Route::view('addEmployee', 'addEmployee')->name('addEmployee');
+
+Route::post('addEmployee', [EmployeeController::class, 'addEmployee'])->name('addEmployee.post');
+
 
