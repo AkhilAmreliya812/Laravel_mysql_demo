@@ -11,4 +11,6 @@ class UserController extends Controller
         $users = DB::select('SELECT * FROM users');
         return view('users', ['users' => $users]);
     }
+
+    
 }

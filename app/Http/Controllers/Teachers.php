@@ -21,7 +21,7 @@ class Teachers extends Controller
 
     function getTeacherBuId() {
         
-        $result = DB::table('teacher')->find(1);
+        $result = DB::table('teacher')->find(19);
         // Check if the result is null
         if(is_null($result)) {
             return "No data found";
